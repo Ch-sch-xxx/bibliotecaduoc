@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/ap1/v1/Libros")
+@RequestMapping("/api/v1/Libros")
 public class LibroController {
 
     @Autowired
@@ -39,5 +39,5 @@ public class LibroController {
     public String eliminarLibro(@PathVariable int id){
         return libroService.eliminarLibro(id);
     }
-    
+
 }
